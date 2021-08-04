@@ -5,7 +5,7 @@
 Through this application, the user can perform search queries for spotify tracks. In order to keep the UI updated, I used a view model class that
 held a `@Published` variable for the tracks to display on the screen, allowing the user to perform multiple searches.
 To display the search results, I integrated SwiftUI views to represent a track and a list of tracks. Though the app is originally made in Storyboard/UIKit to handle 
-`URLSessions` and `URLRequests` in a class called `HTTPClient` .  Lastly, in order for the aformentioned to work, the user must log in into their spotify account
+`URLSessions` and `URLRequests` in a class called `HTTPClient` .  Lastly, in order access the search tab, the user must log in into their spotify account
 to allow us to request data on their behalf. The authentication flow that I chose to follow was PKCE as Spotify recommends it for mobile applications that have 
 secrets [(documentation)](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow-with-proof-key-for-code-exchange-pkce). 
 
